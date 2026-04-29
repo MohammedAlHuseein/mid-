@@ -1,0 +1,193 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  width: 100vw;            
+  min-height: 100vh;       
+  background: rgb(20, 20, 20);  
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.register-card {
+  background-color: rgb(16, 145, 74);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;  
+  gap: 20px;              
+}
+
+
+h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+
+.inputgroup {
+  display: flex;
+  flex-direction: column; 
+  gap: 8px;               
+  width: 100%;
+}
+
+.inputgroup label {
+  color: white;
+  font-weight: bold;
+}
+
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none; 
+}
+
+
+.toogle {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.toogle button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: 0.3s;
+  font-family: inherit;
+}
+
+.toogle button.active {
+  background-color: white;
+  color: rgb(64, 187, 218);
+  font-weight: bold;
+}
+
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #000;
+  transform: translateY(-2px); 
+}
+.home-container {
+  padding: 40px;
+  background-color: #f8f9fc;
+  min-height: 100vh;
+  direction: rtl; /* عشان الترتيب العربي من اليمين للشمال */
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-brand h1 {
+  color: #2b50ed;
+  margin: 0;
+  font-size: 28px;
+}
+
+.user-brand p {
+  color: #666;
+  margin: 5px 0 0 0;
+}
+
+.logout-btn {
+  background-color: #fff1f1;
+  color: #ff4d4d;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+  margin-bottom: 40px;
+}
+
+.cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: white;
+  width: 250px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  border: 1px solid #ffc107; /* لون تحديد خفيف عند الحوم */
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.water-icon { background-color: #eef2ff; color: #2b50ed; }
+.gas-icon { background-color: #fff4e5; color: #ff8800; }
+
+.service-card h3 {
+  margin: 15px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.service-card p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.6;
+}
